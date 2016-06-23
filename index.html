@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Vim!</title>
+        <link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        
+    </head>
+    <body>
+
+
+    
+
+     <!--Open div title-->
+      
+        <div id="title">
+            <h1>The Cheat Sheet VIM</h1>
+            <p>Vim est un éditeur très puissant qui a trop de commandes pour pouvoir toutes les énoncer dans un document comme celui-ci, mais l'objectif de ce document est de rassembler l'essentiel des commandes de Vim pour débuter et vous permettre d'utiliser simplement et rapidement Vim.</p>
+            <img src="vim.png" alt="logo vim" />
+        </div>
+
+        <!--Close div title-->
+
+
+<!--Open menubar-->
+        <div class="menubar">
+    <ul>
+    <li><a href="#commands">Commandes</a></li>
+    <li><a href="#modes">Les modes</a></li>
+    <li><a href="#copcol">Copier / Coller</a></li>
+    <li><a href="#undo">Annuler</a></li>
+    <li><a href="#moove">Déplacements</a></li>
+    <li><a href="#search">Rechercher</a></li>
+    <li><a href="#visual">En visual</a></li>
+	</ul>
+	</div>
+    	
+<!--Close menubar-->  
+
+<!--Open bloc commands-->
+        <div id="commands">
+            <h2>Les commandes de bases de Vim</h2>
+            <p>Pour ouvrir Vim<br />
+                <code>Taper vim et entrée dans le terminal</code><br />
+            </p>
+
+
+            <p>Se d&eacuteplacer vers le haut<br />
+                <code>K</code>
+            </p>
+
+            <p>Se d&eacuteplacer vers le bas<br />
+                <code>J</code>
+            </p>
+
+            <p>Se d&eacuteplacer vers la gauche<br />
+                <code>H</code><br />
+            </p>
+
+            <p>Se d&eacuteplacer vers la droite<br />
+                <code>L</code><br />
+            </p>
+
+			<p>Pour quitter Vim sans enregistrer<br />
+                <code>:q</code><br />
+            </p>
+
+            <p>Pour quitter Vim en enregistrant<br />
+                <code>Taper Echap :wq</code><br />
+            </p>
+
+            <p>Pour effacer un caractère sous le curseur en mode normal <br />
+                <code>tapez xtq</code><br />
+            </p>
+
+            <p>Pour insérer du texte au niveau du curseur en mode normal. pouvez quitter en tapant</br> 
+            <code><Échap></code><br />
+            <code>tapez i et insérez votre texte</code><br />
+            </p>
+         </div>
+           
+
+
+        <!--Open bloc modes-->
+        
+        <div id="modes">
+            <h2>Naviguer entre les modes</h2>
+            <p>
+                Le mode Normal.<br />
+                Quelque soit votre mode actuel, vous pouvez revenir au mode normal en appuyant sur</br>
+                <code>Echap</code><br />
+               </p>
+
+             <p>
+                Pour activer le mode Insertion depuis le mode normal, il faut taper<br />
+                <code>i</code><br />
+               </p>
+
+               <p>
+                Pour activer le mode Remplacement depuis le mode normal, il faut taper<br />
+                <code>R</code><br />
+               </p>
+
+               <p>
+                Vous pouvez aussi remplacer uniquement le caractère sous le curseur avec<br />
+                <code>r</code><br />
+                <p>Vous tapez ensuite le nouveau caractère, et l'éditeur repasse automatiquement en mode normal.</p>
+
+               </p>
+        </div>
+
+<!--Open bloc copcol-->
+
+        
+        <div id="copcol">
+            <h2>Copier/Couper-Coller des lignes entières</h2>
+            <p>Supprime les lignes et les mets dans le presse papier<br />
+                <code>dd</code> 
+            </p><br />
+
+            <p>Pour les coller, il suffit, en mode normal, d'appuyer sur la touches<br />
+
+            <code>p</code>
+            </p>
+
+            <p>Supprime les lignes et les mets dans le presse papier<br />
+            <code>p</code> 
+            </p>
+
+			<p>Pour copier, la commande est<br />
+            <code>yy</code>
+
+            </p>
+             <p>Pour coller, la commande est toujours<br />
+            <code>p</code>
+            </p>
+            </div>
+
+			<div id="undo">
+			<h2>Pour annuler</h2> 
+            <p>Toujours en mode normal, taper: <br />
+            <code>u</code> 
+            </p>  
+        	</div>
+        <!--Open bloc moove-->
+        	
+        	<div id="moove">
+            <h2>Aller à la ligne x</h2>
+            <p>En mode normal, vous pouvez envoyer le curseur à la ligne 18 en tapant
+                
+                <code>18</code><br />
+       			 </p>
+
+  			<p>Vous pouvez aussi aller en haut du fichier en tapant
+  			<code>gg</code><br />
+       	    </p>
+                
+                
+
+       	   <p>ou en bas en tapant 
+       	   <code>g</code><br />
+       	   </p>
+       	   </div>
+                
+
+        <!--Open bloc search-->
+        <div id="search">
+            <h2>Rechercher du texte</h2>
+            <p> En mode normal, pour rechercher la chaine "foobar", tapez<br />
+            <code>/foobar</code><br />
+            </p>
+        </div>
+                
+        
+        
+
+        <div id="visual">
+            <h2>Copier/Couper-Coller en mode visuel</h2>
+            <p>Le mode visuel vous permet de sélectionner du texte. Sélectionnez le texte que vous voulez couper ou copier, et 
+
+            appuyez sur</br>
+            <code>d</code>
+
+            pour couper </br>
+            <code>y</code>
+
+            pour copier</br>
+            <code>p</code>
+
+            pour coller
+            </p>
+            
+        
+        
+        
+       
+        
+</body>
+</html>
