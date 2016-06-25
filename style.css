@@ -1,7 +1,7 @@
 body {
 	background: #FFF;
     background-color: #bdc3c7;
-	font-family: Georgia, Times New Roman, Times, serif;
+	font-family: 'Quicksand'Georgia'', Times New Roman, Times, serif;
 	font-size: 30px;
 	text-align: center;
     margin: 0;
@@ -81,9 +81,7 @@ code {
 
 @media screen and (max-width:500px) {
 
-	h2 {
-		font-size: 35px;
-	}
+	
 
 	div p code {
 		font-size: 20px;
@@ -91,6 +89,18 @@ code {
 
 	img {
 		width: 50%;
+	}
+
+	
+
+	body #title h1 {
+		width: 100px;
+		margin-left: 45px;
+
+	}
+
+	h2 {
+		font-size: 0.9em;
 	}
 
 }
