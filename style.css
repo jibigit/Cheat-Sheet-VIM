@@ -44,14 +44,6 @@ h2 {
 	text-transform: lowercase;
 }
 
-h3 {
-	font-size: 40px;
-	font-weight: normal;
-	margin: 0;
-    margin-top: 40px;
-	text-transform: lowercase;
-}
-
 p {
 	width: auto;
 	margin: 40px auto;
@@ -77,15 +69,6 @@ ul {
 
 
 
-blockquote {
-	text-align: left;
-	width: 720px;
-	margin: 10px auto;
-	background: #C5C3DE;
-	border: solid 2px #69697A;
-	padding: 0 40px;
-}
-
 code {
     background-color: #456;
 	font-style: normal;
@@ -95,3 +78,19 @@ code {
     font-family: menlo, monospace;
 }
 
+
+@media screen and (max-width:500px) {
+
+	h2 {
+		font-size: 35px;
+	}
+
+	div p code {
+		font-size: 20px;
+	}
+
+	img {
+		width: 50%;
+	}
+
+}
